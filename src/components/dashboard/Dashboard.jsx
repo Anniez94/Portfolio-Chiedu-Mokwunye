@@ -56,12 +56,12 @@ const Dashboard = () => {
                         </a>
                     </div>
                 </div>
-                <div className="more-info">
+                {/* <div className="more-info">
                     {!lang ?
                         <p>A brief about me, click the image.</p> :
                         <p>Don't stop here, I am just an email away.</p>
                     }
-                </div>
+                </div> */}
                 <div className="menu-hold">
                     <div onClick={() => setShowMenu(true)}>
                         <img src={menu} alt="menu icon" className="menu" />

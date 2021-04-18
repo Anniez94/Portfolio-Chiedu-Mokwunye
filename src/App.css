@@ -14,8 +14,7 @@ html {
   
   body {
     background-color: #ffffff;
-    min-height: 100vh;
-  min-height: -webkit-fill-available;
+    
   }
 
   body,
