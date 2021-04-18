@@ -77,7 +77,8 @@ span{
       background-color: #040E63;
       position: fixed;
         top: 20%;
-        height: 100vh;
+        bottom: 0;
+        height: 100%;
         left: 95%;
         width: 100%;
         right: 0%;
@@ -243,6 +244,9 @@ span{
  
   .c {
      margin-left: -150px;
+     width: 100vw;
+             height: 100vh;
+             margin-top: -130px;
     }
     
   }
