@@ -1,7 +1,9 @@
 .footer {
     position: fixed;
     bottom: 0;
+    width: 100%;
 }
 .footer p {
     font-size: 10px  !important;
+    text-align: center;
 }

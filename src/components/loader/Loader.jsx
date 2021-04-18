@@ -15,8 +15,8 @@ const Loader = () => {
   })
 
   return (
-    <div id="root">
-    <div onClick={() => toggle(!open)} >
+    <div className="root">
+    <div onClick={() => toggle(!open)} className="root-div">
       <animated.svg style={{ transform, opacity }} viewBox="0 0 1278 446">
         <defs>
           <filter id="water">

@@ -1,7 +1,7 @@
 #dashboard{
     height:95vh;
     width: 100%;
-    max-width: 100vmax;
+    max-width: 100%;
     background-color: #fff !important;
     padding: 20px 50px;
     user-select: none;
@@ -53,8 +53,8 @@ span{
   top: 40%;
    left: 38%;
    width: 800px;
-   height: 750px;
-   margin-top: -300px; /* Half the height */
+   height: 80vh;
+   margin-top: -200px; 
    margin-left: -270px;
    cursor: pointer;
    will-change: transform, opacity;
@@ -75,12 +75,12 @@ span{
 
   .menu-hold{
       background-color: #040E63;
-      position: relative;
+      position: fixed;
         top: 20%;
         height: 100vh;
-        left: 99%;
+        left: 95%;
         width: 100%;
-        right: 5%;
+        right: 0%;
         border-bottom-left-radius: 100px;
         transform:rotate(10deg);
         cursor: pointer;
@@ -94,7 +94,7 @@ span{
       height: 50%;
       left: 97%;
       width: 100%;
-      right: 5%;
+      right: 0%;
       border-bottom-left-radius: 100px;
       transform:rotate(10deg);
       cursor: pointer;
@@ -154,7 +154,7 @@ span{
   .nav {
     position: relative;
     top: 50%;
-    left: 50%;
+    left: 45%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -186,23 +186,18 @@ span{
 @media screen and (max-width: 950px) {
 
         .c {
-             margin-top: -300px; /* Half the height */
              margin-left: -300px;
             }
-          
 }
 
   @media screen and (max-width: 700px) {
         .c {
-            position: absolute;
-            top: 50%;
-             left: 50%;
              width: 500px;
              height: 500px;
-             margin-top: -250px; /* Half the height */
-             margin-left: -250px;
-          
+             margin-left: -170px;
+             margin-top: -130px;
             }
+            
             .menu-open{
                   left: 94.5%;   
             }
@@ -211,9 +206,43 @@ span{
 
 @media screen and (max-width: 500px) {
     .more-info {
-        margin-left: -240px;
+        margin-left: -200px;
       }  
       .menu-open{
         left: 93%;   
   }
+
+  #dashboard{
+    padding: 20px 20px 0px 20px;
+  }
+  .c {
+     margin-left: -150px;
+    }
+    .nav {
+      left: 20%;
+    }
+    
 }
+
+@media screen and (max-width: 400px) {
+ 
+.c {
+   margin-left: -180px;
+  }
+
+  .more-info {
+    margin-left: -200px;
+  }  
+  
+  .menu-open{
+    left: 91%;   
+}
+}
+
+@media screen and (max-width: 350px) {
+ 
+  .c {
+     margin-left: -150px;
+    }
+    
+  }
