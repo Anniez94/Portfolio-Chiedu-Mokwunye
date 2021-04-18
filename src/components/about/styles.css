@@ -24,7 +24,7 @@ width: 100%;
 .options {
     display: flex;
     position: fixed;
-    top: 20;
+    top: 0;
     width: 100%;
     justify-content: flex-end;
     background-color: #EFF0F8;
