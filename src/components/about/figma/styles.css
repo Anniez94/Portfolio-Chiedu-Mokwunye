@@ -1,0 +1,48 @@
+  
+  .content {
+    width: 320px;
+    height: 200px;
+    margin-bottom: 100px;
+  }
+  
+  .content > div {
+    width: 320px;
+    height: 80px;
+    pointer-events: auto;
+    border-radius: 5px;
+    color: white;
+    line-height: 90px;
+    padding-left: 32px;
+    font-size: 14.5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  
+  .c1 {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    margin-bottom: 20px;
+  }
+  .c2 {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    margin-bottom: 20px;
+  }
+  .c3 {
+    background: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%);
+    margin-bottom: 20px;
+  }
+  .c4 {
+    background: linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%);
+  }
+
+  @media screen and (max-width: 450px) {
+    .content {
+      width: 97%;
+    }
+    
+    .content > div {
+      width: 95%;
+      
+    }
+  }
+  

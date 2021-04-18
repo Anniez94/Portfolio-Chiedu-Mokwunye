@@ -1,0 +1,219 @@
+#dashboard{
+    height:95vh;
+    width: 100%;
+    max-width: 100vmax;
+    background-color: #fff !important;
+    padding: 20px 50px;
+    user-select: none;
+    overflow: hidden !important;
+}
+
+#dashboard2{
+    height:100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.icon-container {
+    position: absolute;
+    top: 35%;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.icons {
+    width: 30px !important;
+    margin-top: 30px;
+}
+
+.icons img {
+    width:  100% !important;
+    height: 100% !important;
+    border-radius: 8px;
+}
+
+.cool {
+    width: 16px;
+    height: 16px;
+}
+
+.greet {
+    display: flex;
+    justify-content: flex-start;
+}
+span{
+    margin-top: 24px;
+}
+
+/* Reactspring */
+
+.c {
+  position: absolute;
+  top: 40%;
+   left: 38%;
+   width: 800px;
+   height: 750px;
+   margin-top: -300px; /* Half the height */
+   margin-left: -270px;
+   cursor: pointer;
+   will-change: transform, opacity;
+  overflow: hidden;
+  }
+
+  .more-info {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 500px;
+    margin-left: -250px;
+  }
+
+  .more-info p{
+      text-align: center;
+  }
+
+  .menu-hold{
+      background-color: #040E63;
+      position: relative;
+        top: 20%;
+        height: 100vh;
+        left: 99%;
+        width: 100%;
+        right: 5%;
+        border-bottom-left-radius: 100px;
+        transform:rotate(10deg);
+        cursor: pointer;
+        overflow: hidden !important;
+        
+  }
+  .menu-open{
+    background-color: #ffffff;
+    position: absolute;
+      top: 30%;
+      height: 50%;
+      left: 97%;
+      width: 100%;
+      right: 5%;
+      border-bottom-left-radius: 100px;
+      transform:rotate(10deg);
+      cursor: pointer;
+      
+}
+  .menu-hold div{
+    position: relative;
+    top: 75%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 30px;
+    margin-left: 20px;
+    transform:rotate(-11.5deg);
+  }
+
+  .menu-open div{
+    position: relative;
+    top: 75%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 30px;
+    margin-left: 15px;
+    transform:rotate(-12deg);
+  }
+
+  .menu-hold > div > img, .menu-open > div > img{
+      width: 100%;
+  }
+ 
+
+  #full-menu {
+      background-color: #040E63;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      animation: 5s ease-in-out full 1;
+      -webkit-animation: 5s ease-in-out full 1;
+      overflow: hidden;
+  }
+  .remove-all {
+      display: none;
+  }
+  
+  .navs-p {
+      color: #fff;
+      font-size: 60px;
+  }
+
+  .navs-p:hover {
+    color: #fff;
+    font-size: 60px;
+  text-decoration: line-through !important;
+}
+
+  .nav {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  @keyframes full {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+     }
+     100% {
+        opacity: 1;
+        transform: translateX(0);
+     }
+  }
+
+  @-webkit-keyframes full {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(500px);
+     }
+     100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+     }
+  }
+
+
+@media screen and (max-width: 950px) {
+
+        .c {
+             margin-top: -300px; /* Half the height */
+             margin-left: -300px;
+            }
+          
+}
+
+  @media screen and (max-width: 700px) {
+        .c {
+            position: absolute;
+            top: 50%;
+             left: 50%;
+             width: 500px;
+             height: 500px;
+             margin-top: -250px; /* Half the height */
+             margin-left: -250px;
+          
+            }
+            .menu-open{
+                  left: 94.5%;   
+            }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .more-info {
+        margin-left: -240px;
+      }  
+      .menu-open{
+        left: 93%;   
+  }
+}
