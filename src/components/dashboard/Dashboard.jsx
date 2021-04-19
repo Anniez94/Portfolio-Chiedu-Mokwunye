@@ -7,7 +7,7 @@ import medium from "../../assets/medium.svg"
 import twitter from "../../assets/twitter.svg"
 import linkedin from "../../assets/linkedin.svg"
 import cool from "../../assets/cool.png"
-import menu from "../../assets/menu.png"
+// import menu from "../../assets/menu.png"
 import closemenu from "../../assets/close.png"
 import gmail from "../../assets/gmail.svg"
 import './styles.css'
@@ -21,6 +21,8 @@ const Dashboard = () => {
         transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
         config: { mass: 5, tension: 500, friction: 80 }
     })
+
+    console.log(window.screen.height)
     return (
         <div id={!showMenu ? "dashboard" : "dashboard2"}>
             <div className={showMenu ? "remove-all" : ""}>
@@ -30,10 +32,10 @@ const Dashboard = () => {
                         <img src={cool} alt="cool emoji" className="cool" />
                     </span>
                 </div>
-                {/* <div className="dash-img" onClick={() => { set(state => !state); setLang(!lang) }} >
+                <div onClick={() => { set(state => !state); setLang(!lang) }} >
                     <a.img src={dashboardImg} alt="dashboard-image" className="c back " style={{ opacity: opacity.interpolate(o => 1 - o), transform }} />
                     <a.img src={dashboardImg2} alt="dashboard-image" className="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
-                </div> */}
+                </div>
                 <div className="icon-container">
                     <div className="icons">
                         <a href="https://igbo-dev.medium.com/" target="_blank" rel="noreferrer">
@@ -56,12 +58,12 @@ const Dashboard = () => {
                         </a>
                     </div>
                 </div>
-                {/* <div className="more-info">
+                <div className="more-info">
                     {!lang ?
                         <p>A brief about me, click the image.</p> :
                         <p>Don't stop here, I am just an email away.</p>
                     }
-                </div> */}
+                </div>
 
                 {/* <div className="menu-hold">
                     <div onClick={() => setShowMenu(true)}>
@@ -69,7 +71,7 @@ const Dashboard = () => {
                     </div>
                 </div> */}
             </div>
-            {/* {showMenu ?
+            {showMenu ?
                 <a.div id="full-menu">
                     <div className="nav">
                         <div className="navs">
@@ -88,7 +90,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </a.div>
-                : null} */}
+                : null}
         </div>
     )
 }

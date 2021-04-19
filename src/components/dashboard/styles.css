@@ -3,7 +3,7 @@
     width: 100%;
     max-width: 100%;
     background-color: #fff !important;
-    padding: 20px 50px;
+    padding: 20px 0px;
     user-select: none;
     overflow: hidden !important;
 }
@@ -41,6 +41,7 @@
 .greet {
     display: flex;
     justify-content: flex-start;
+    padding-left: 50px;
 }
 span{
     margin-top: 24px;
@@ -50,26 +51,31 @@ span{
 
 .c {
   position: absolute;
-  top: 40%;
+  /* top: 40%;
    left: 38%;
    width: 800px;
    height: 80vh;
    margin-top: -200px; 
-   margin-left: -270px;
+   margin-left: -270px; */
    cursor: pointer;
    will-change: transform, opacity;
   overflow: hidden;
+  position: absolute;
+width: 64.375%;
+height: 71.6%;
+left: 17.77%;
+top: 14.22%;
   }
 
   .more-info {
     position: absolute;
     top: 75%;
-    left: 50%;
-    width: 500px;
-    margin-left: -250px;
+    width: 100%;
+    background-color: aqua;
+    margin: 0 auto;
   }
 
-  .more-info p{
+  .more-info p {
       text-align: center;
   }
 
@@ -186,18 +192,18 @@ span{
 
 @media screen and (max-width: 950px) {
 
-        .c {
+        /* .c {
              margin-left: -300px;
-            }
+            } */
 }
 
   @media screen and (max-width: 700px) {
-        .c {
+        /* .c {
              width: 500px;
              height: 500px;
              margin-left: -170px;
              margin-top: -130px;
-            }
+            } */
             
             .menu-open{
                   left: 94.5%;   
@@ -206,19 +212,19 @@ span{
 }
 
 @media screen and (max-width: 500px) {
-    .more-info {
-        margin-left: -200px;
-      }  
+    /* .more-info {
+        width: 98%;
+      }   */
       .menu-open{
         left: 93%;   
   }
 
-  #dashboard{
-    padding: 20px 20px 0px 20px;
-  }
-  .c {
+  /* #dashboard{
+    padding: 20px 20px;
+  } */
+  /* .c {
      margin-left: -150px;
-    }
+    } */
     .nav {
       left: 20%;
     }
@@ -227,13 +233,13 @@ span{
 
 @media screen and (max-width: 400px) {
  
-.c {
+/* .c {
    margin-left: -180px;
-  }
+  } */
 
-  .more-info {
+  /* .more-info {
     margin-left: -200px;
-  }  
+  }   */
   
   .menu-open{
     left: 91%;   
@@ -242,11 +248,11 @@ span{
 
 @media screen and (max-width: 350px) {
  
-  .c {
+  /* .c {
      margin-left: -100px;
      width: 100vw;
              height: 100vh;
              margin-top: -130px;
-    }
+    } */
     
   }
