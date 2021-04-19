@@ -30,10 +30,10 @@ const Dashboard = () => {
                         <img src={cool} alt="cool emoji" className="cool" />
                     </span>
                 </div>
-                <div className="dash-img" onClick={() => { set(state => !state); setLang(!lang) }} >
+                {/* <div className="dash-img" onClick={() => { set(state => !state); setLang(!lang) }} >
                     <a.img src={dashboardImg} alt="dashboard-image" className="c back " style={{ opacity: opacity.interpolate(o => 1 - o), transform }} />
                     <a.img src={dashboardImg2} alt="dashboard-image" className="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
-                </div>
+                </div> */}
                 <div className="icon-container">
                     <div className="icons">
                         <a href="https://igbo-dev.medium.com/" target="_blank" rel="noreferrer">
@@ -62,13 +62,14 @@ const Dashboard = () => {
                         <p>Don't stop here, I am just an email away.</p>
                     }
                 </div> */}
-                <div className="menu-hold">
+
+                {/* <div className="menu-hold">
                     <div onClick={() => setShowMenu(true)}>
                         <img src={menu} alt="menu icon" className="menu" />
                     </div>
-                </div>
+                </div> */}
             </div>
-            {showMenu ?
+            {/* {showMenu ?
                 <a.div id="full-menu">
                     <div className="nav">
                         <div className="navs">
@@ -87,7 +88,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </a.div>
-                : null}
+                : null} */}
         </div>
     )
 }
