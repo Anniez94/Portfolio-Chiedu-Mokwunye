@@ -66,6 +66,7 @@
       height: 35px;
       left: calc(95% - 35px);
       top: 41px;
+      cursor: pointer;
   }
   .menu-open{
     background-color: #ffffff;
