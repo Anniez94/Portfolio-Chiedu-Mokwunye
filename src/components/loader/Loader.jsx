@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useSpring, animated } from 'react-spring'
+import Footer from "../footer/Footer"
 import './styles.css'
 
 const AnimFeTurbulence = animated('feTurbulence')
@@ -70,6 +71,7 @@ const Loader = () => {
         </g>
       </animated.svg>
     </div>
+    <Footer />
     </div>
   )
 }

@@ -130,6 +130,12 @@
     transform: translateY(-50%);
   }
 
+  .foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
   @keyframes full {
     0% {
         opacity: 0;

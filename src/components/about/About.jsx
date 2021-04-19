@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import Figma from "./figma/Figma"
 import cv from "../../assets/cv.pdf"
+import Footer from "../footer/Footer"
 import "./styles.css"
 
 const About = () => {
@@ -68,6 +69,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

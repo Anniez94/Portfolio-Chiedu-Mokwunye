@@ -11,6 +11,7 @@ import menu from "../../assets/menu.svg"
 import closemenu from "../../assets/close.png"
 import gmail from "../../assets/gmail.svg"
 import './styles.css'
+import Footer from "../footer/Footer"
 
 const Dashboard = () => {
     const [flipped, set] = useState(false);
@@ -85,6 +86,10 @@ const Dashboard = () => {
                     </div>
                 </a.div>
                 : null}
+                <div className="foot">
+                <Footer />
+                </div>
+               
         </div>
     )
 }
