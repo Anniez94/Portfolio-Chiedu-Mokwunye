@@ -19,6 +19,10 @@ function List() {
                 target="_blank" rel="noreferrer">Yoga</a> 
               
             </div>
+            <div className="c4">
+                <a href="https://www.figma.com/proto/oCcVIxXheyJ42VTH5dI47Q/test-mobile-design?page-id=0%3A1&node-id=26%3A74&viewport=342%2C423%2C0.7392951846122742&scaling=scale-down" 
+                target="_blank" rel="noreferrer">Mobile - Connect</a> 
+            </div>
            
         </div>
     )
