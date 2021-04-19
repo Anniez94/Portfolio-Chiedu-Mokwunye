@@ -36,6 +36,9 @@ width: 100%;
 .projects, .sub-heads {
 margin-top: 50px;
 }
+.sub-heads {
+    margin-bottom: 50px;
+}
 
 .title {
     font-size: 24px;
