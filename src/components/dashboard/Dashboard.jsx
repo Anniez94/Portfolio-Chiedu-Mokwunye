@@ -7,7 +7,7 @@ import medium from "../../assets/medium.svg"
 import twitter from "../../assets/twitter.svg"
 import linkedin from "../../assets/linkedin.svg"
 // import cool from "../../assets/cool.png"
-// import menu from "../../assets/menu.png"
+import menu from "../../assets/menu.svg"
 import closemenu from "../../assets/close.png"
 import gmail from "../../assets/gmail.svg"
 import './styles.css'
@@ -30,9 +30,6 @@ const Dashboard = () => {
                 <div onClick={() => { set(state => !state); setLang(!lang) }} >
                     <a.img src={dashboardImg} alt="dashboard-image" className="c back " style={{ opacity: opacity.interpolate(o => 1 - o), transform }} />
                     <a.img src={dashboardImg2} alt="dashboard-image" className="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
-                </div>
-                <div className="greet">
-                    <p>Hello Employer</p>
                 </div>
                
                 <div className="icon-container">
@@ -59,16 +56,14 @@ const Dashboard = () => {
                 </div>
                 <div className="more-info">
                     {!lang ?
-                        <p>A brief about me, click the image.</p> :
-                        <p>Don't stop here, I am just an email away.</p>
+                        <p>Hi Employer, click the image.</p> :
+                        <p>I am just an email away.</p>
                     }
                 </div>
 
-                {/* <div className="menu-hold">
-                    <div onClick={() => setShowMenu(true)}>
+                <div className="menu-hold" onClick={() => setShowMenu(true)}>
                         <img src={menu} alt="menu icon" className="menu" />
-                    </div>
-                </div> */}
+                </div>
             </div>
             {showMenu ?
                 <a.div id="full-menu">

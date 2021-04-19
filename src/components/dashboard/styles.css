@@ -33,14 +33,6 @@
     border-radius: 8px;
 }
 
-.greet {
-    position: absolute;
-    width: 100%;
-    height: 3.44%;
-    left:3%;
-    top: 0.56%;
-}
-
 
 /* Reactspring */
 
@@ -68,19 +60,12 @@
   }
 
   .menu-hold{
-      background-color: #040E63;
-      position: fixed;
-        top: 20%;
-        bottom: 0;
-        height: 100%;
-        left: 95%;
-        width: 100%;
-        right: 0%;
-        border-bottom-left-radius: 100px;
-        transform:rotate(10deg);
-        cursor: pointer;
-        overflow: hidden !important;
-        
+      background-color: #ffffff;
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      left: calc(95% - 35px);
+      top: 41px;
   }
   .menu-open{
     background-color: #ffffff;
@@ -92,19 +77,8 @@
       right: 0%;
       border-bottom-left-radius: 100px;
       transform:rotate(10deg);
-      cursor: pointer;
-      
+      cursor: pointer;   
 }
-  .menu-hold div{
-    position: relative;
-    top: 75%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    width: 30px;
-    margin-left: 20px;
-    transform:rotate(-11.5deg);
-  }
 
   .menu-open div{
     position: relative;
@@ -117,7 +91,7 @@
     transform:rotate(-12deg);
   }
 
-  .menu-hold > div > img, .menu-open > div > img{
+  .menu-hold > img, .menu-open > div > img{
       width: 100%;
   }
  
@@ -178,40 +152,22 @@
   }
 
 
-@media screen and (max-width: 950px) {
-
-        /* .c {
-             margin-left: -300px;
-            } */
-}
-
-  @media screen and (max-width: 700px) {
-        /* .c {
-             width: 500px;
-             height: 500px;
-             margin-left: -170px;
-             margin-top: -130px;
-            } */
-            
-            .menu-open{
-                  left: 94.5%;   
-            }
+  @media screen and (max-width: 700px) {  
+    .menu-open{
+          left: 94.5%;   
+    }
     
 }
 
 @media screen and (max-width: 500px) {
   
-      .menu-open{
-        left: 93%;   
+  .menu-open{
+      left: 93%;   
   }
 
-  /* #dashboard{
-    padding: 20px 20px;
-  } */
- 
-    .nav {
+  .nav {
       left: 20%;
-    }
+  }
     
 }
 
