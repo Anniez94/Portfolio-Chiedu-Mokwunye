@@ -1,11 +1,11 @@
 #dashboard{
-    height:95vh;
+    max-height:90vh !important;
     width: 100%;
     max-width: 100%;
     background-color: #fff !important;
-    padding: 20px 0px;
     user-select: none;
     overflow: hidden !important;
+    background-color: red;
 }
 
 #dashboard2{
@@ -16,10 +16,10 @@
 
 .icon-container {
     position: absolute;
-    top: 35%;
+    top: 32.3%;
+    left: 3%;
     display: grid;
     grid-template-columns: 1fr;
-    
 }
 
 .icons {
@@ -33,45 +33,33 @@
     border-radius: 8px;
 }
 
-.cool {
-    width: 16px;
-    height: 16px;
+.greet {
+    position: absolute;
+    width: 100%;
+    height: 3.44%;
+    left:3%;
+    top: 0.56%;
 }
 
-.greet {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 50px;
-}
-span{
-    margin-top: 24px;
-}
 
 /* Reactspring */
 
 .c {
-  position: absolute;
-  /* top: 40%;
-   left: 38%;
-   width: 800px;
-   height: 80vh;
-   margin-top: -200px; 
-   margin-left: -270px; */
-   cursor: pointer;
-   will-change: transform, opacity;
-  overflow: hidden;
-  position: absolute;
-width: 64.375%;
-height: 71.6%;
-left: 17.77%;
-top: 14.22%;
+    position: absolute;
+    cursor: pointer;
+    will-change: transform, opacity;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
   }
 
   .more-info {
     position: absolute;
-    top: 75%;
+    top: 83%;
     width: 100%;
-    background-color: aqua;
     margin: 0 auto;
   }
 
@@ -212,9 +200,7 @@ top: 14.22%;
 }
 
 @media screen and (max-width: 500px) {
-    /* .more-info {
-        width: 98%;
-      }   */
+  
       .menu-open{
         left: 93%;   
   }
@@ -222,9 +208,7 @@ top: 14.22%;
   /* #dashboard{
     padding: 20px 20px;
   } */
-  /* .c {
-     margin-left: -150px;
-    } */
+ 
     .nav {
       left: 20%;
     }
@@ -232,27 +216,7 @@ top: 14.22%;
 }
 
 @media screen and (max-width: 400px) {
- 
-/* .c {
-   margin-left: -180px;
-  } */
-
-  /* .more-info {
-    margin-left: -200px;
-  }   */
-  
   .menu-open{
     left: 91%;   
 }
 }
-
-@media screen and (max-width: 350px) {
- 
-  /* .c {
-     margin-left: -100px;
-     width: 100vw;
-             height: 100vh;
-             margin-top: -130px;
-    } */
-    
-  }

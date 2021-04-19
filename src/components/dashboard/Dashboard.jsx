@@ -6,7 +6,7 @@ import dashboardImg2 from "../../assets/portfolio-dashboard2.svg"
 import medium from "../../assets/medium.svg"
 import twitter from "../../assets/twitter.svg"
 import linkedin from "../../assets/linkedin.svg"
-import cool from "../../assets/cool.png"
+// import cool from "../../assets/cool.png"
 // import menu from "../../assets/menu.png"
 import closemenu from "../../assets/close.png"
 import gmail from "../../assets/gmail.svg"
@@ -26,16 +26,15 @@ const Dashboard = () => {
     return (
         <div id={!showMenu ? "dashboard" : "dashboard2"}>
             <div className={showMenu ? "remove-all" : ""}>
-                <div className="greet">
-                    <p>Hello Employer</p>
-                    <span>
-                        <img src={cool} alt="cool emoji" className="cool" />
-                    </span>
-                </div>
+                
                 <div onClick={() => { set(state => !state); setLang(!lang) }} >
                     <a.img src={dashboardImg} alt="dashboard-image" className="c back " style={{ opacity: opacity.interpolate(o => 1 - o), transform }} />
                     <a.img src={dashboardImg2} alt="dashboard-image" className="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }} />
                 </div>
+                <div className="greet">
+                    <p>Hello Employer</p>
+                </div>
+               
                 <div className="icon-container">
                     <div className="icons">
                         <a href="https://igbo-dev.medium.com/" target="_blank" rel="noreferrer">
