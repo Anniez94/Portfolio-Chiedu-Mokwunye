@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import Figma from "./figma/Figma"
+// import Figma from "./figma/Figma"
 import cv from "../../assets/cv.pdf"
 import Footer from "../footer/Footer"
 import "./styles.css"
@@ -64,8 +64,8 @@ const About = () => {
                     </div>
 
                     <div className="sub-heads">
-                        <p>Figma Designs</p>
-                        <Figma />
+                        <p>Figma Designs Loading</p>
+                        {/* <Figma /> */}
                     </div>
                 </div>
             </div>
